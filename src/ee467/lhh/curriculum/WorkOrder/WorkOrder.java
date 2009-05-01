@@ -10,11 +10,11 @@ import java.util.Date;
  */
 public class WorkOrder {
   /** Work Order number 1 (Column 1) */
-  private int orderNumber;
+  private String orderNumber;
   /** Time completed (Column 4) */
   private Date timeCompleted = null;
   /** Operation Number (Column5) */
-  private int operationNumber;
+  private String operationNumber;
   /** Banner ID for student */
   private String bannerId = null;
   /** Data for work order */
@@ -29,7 +29,7 @@ public class WorkOrder {
    * @param bannerId of the student that this workorder pertains to
    * @param workOrderData of this work order
    */
-  public WorkOrder(int orderNumber, int operationNumber, String bannerId, String workOrderData) {
+  public WorkOrder(String orderNumber, String operationNumber, String bannerId, String workOrderData) {
     this.orderNumber = orderNumber;
     this.timeCompleted = null;
     this.operationNumber = operationNumber;
@@ -42,7 +42,7 @@ public class WorkOrder {
    * Method that returns the order Number of this workorder
    * @return order number of this particular work order
    */
-  public int getOrderNumber() {
+  public String getOrderNumber() {
     return this.orderNumber;
   }
 
@@ -66,7 +66,7 @@ public class WorkOrder {
    * Method that returns the operation number of this work order
    * @return operation number of this work order
    */
-  public int getOperationNumber() {
+  public String getOperationNumber() {
     return this.operationNumber;
   }
 
