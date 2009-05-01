@@ -15,12 +15,18 @@ import java.util.List;
 public class Student {
   /** banner ID for student */
   private String bannerId;
-  /** Curriculum year for the student */
+  /** Curriculum year, track and major, for the student */
   private String curriculumYear;
-  /** List of grade Report lines for student */
+  private String track;
+  private String major;
+  /** List of grade report lines that are drawn from the DB*/
   List<GradeReportLine> gradeReport = new ArrayList<GradeReportLine>();
 
   public Student(String bannerId) {
     this.bannerId = bannerId;
+  }
+  
+  public void initGradeReport() {
+    
   }
 }

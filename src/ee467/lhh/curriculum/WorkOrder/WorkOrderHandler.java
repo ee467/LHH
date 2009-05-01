@@ -19,6 +19,8 @@ public class WorkOrderHandler {
   private boolean isFinished = false;
   /** The Sql controller which will handle reading and writing work orders */
   private SqlController sqlController;
+  
+  private List<String> bannerIdList = new ArrayList<String>();
   /**
    * Blank Constructor
    */
@@ -55,5 +57,13 @@ public class WorkOrderHandler {
       orders.add(order);
     }
     return orders.get(position);
+  }
+  
+  /**
+   * Method that returns the list of banner id's
+   * @return list of banner ID's
+   */
+  public List<String> getBannerIdList() {
+    return this.bannerIdList;
   }
 }
