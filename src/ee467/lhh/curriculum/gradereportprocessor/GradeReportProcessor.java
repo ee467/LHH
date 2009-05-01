@@ -20,10 +20,10 @@ public class GradeReportProcessor {
   private SqlController sqlController;
   /** the class that will handle GPA calculations */
 //  private GpaCalculator gpaCalculator;
-  /** The grade Report List */
-  private List<GradeReport> gradeReportList = new ArrayList<GradeReport>();
+  /** The list of students that need to be processed */
+  private List<Student> studentList = new ArrayList<Student>();
   /** List of unprocessed Grade reports */
-  private List<GradeReport> unprocessedReportList = new ArrayList<GradeReport>();
+  private List<GradeReportLine> unprocessedReportList = new ArrayList<GradeReportLine>();
   
   public GradeReportProcessor() {
     this.orderHandler = new WorkOrderHandler();
