@@ -18,7 +18,8 @@ public class FileReader {
 	}
 	
 	private String getGpa(){
-		this.gpaReader.
+		return FILENAME;
+		
 	}
 	
 	private WorkOrder getWorkOrder(){
